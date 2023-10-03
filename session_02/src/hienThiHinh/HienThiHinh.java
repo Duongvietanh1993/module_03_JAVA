@@ -11,6 +11,7 @@ public class HienThiHinh {
             System.out.println("1.Hình Chữ Nhật");
             System.out.println("2.Hình Tam Giác Vuông Hướng Lên");
             System.out.println("3.Hình Tam Giác Vuông Hướng Xuống");
+            System.out.println("4.Hình Tam Giác Cân");
             System.out.println("0.Thoát");
             System.out.println("Nhập vào lựa chọn của bạn: ");
             choice = sc.nextInt();
@@ -39,8 +40,19 @@ public class HienThiHinh {
                         System.out.println("");
                     }
                     break;
+                case 4:
+                    int n = 5; // Số hàng của tam giác cân
+                    for (int i = 1; i <= n; i++) {
+                        for (int j = 1; j <= n - i; j++) {
+                            System.out.print("   ");
+                        }
+                        for (int k = 1; k <= 2 * i - 1; k++) {
+                            System.out.print(" * ");
+                        }
+                        System.out.println("");
+                    }
+                    break;
             }
         }
-        ;
     }
 }
