@@ -1,9 +1,7 @@
-package classExam_Basic;
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-public class Library {
+public class Book {
     private int bookId;
     private String bookName;
     private String author;
@@ -16,25 +14,33 @@ public class Library {
 
     static int count = 1;
 
-    public Library() {
+    public Book() {
         this.bookId = count++;
+
     }
 
-    public Library(String bookName, String author, String description, double importPrice, double exportPrice, int quantity, boolean bookStatus) {
+    public Book(String bookName, String author, String description, double importPrice, double exportPrice, int quantity, boolean bookStatus) {
         this.bookId = count++;
         this.bookName = bookName;
         this.author = author;
-
         this.description = description;
         this.importPrice = importPrice;
         this.exportPrice = exportPrice;
         this.interest = this.exportPrice - this.importPrice;
         this.quantity = quantity;
-        this.bookStatus = bookStatus;
+        this.bookStatus = true;
     }
 
     public double getInterest() {
         return this.exportPrice - this.importPrice;
+    }
+
+    public int getBookId() {
+        return bookId;
+    }
+
+    public String getBookName() {
+        return bookName;
     }
 
     public void inputData() {
@@ -95,21 +101,17 @@ public class Library {
 
         System.out.println("Trạng thái: ");
         this.bookStatus = Boolean.parseBoolean(scanner.nextLine());
+
+        this.interest = this.exportPrice - this.importPrice;
     }
 
-    public int getBookId() {
-        return bookId;
-    }
 
-    public String getBookName() {
-        return bookName;
-    }
 
     DecimalFormat formatter = new DecimalFormat("###,###,###");
 
-    @Override
-    public String toString() {
-        return "-----Exam_Basic----" + '\n' +
+
+    public void displayData() {
+        System.out.println(
                 "bookId: " + bookId + '\n' +
                 "bookName: " + bookName + '\n' +
                 "author: " + author + '\n' +
@@ -118,6 +120,7 @@ public class Library {
                 "exportPrice: " + (formatter.format(exportPrice)) + " VNĐ" + '\n' +
                 "interest: " + (formatter.format(interest)) + " VNĐ" + '\n' +
                 "quantity: " + quantity + '\n' +
-                "bookStatus: " + bookStatus + '\n';
+                "bookStatus: " + bookStatus + '\n'
+        );
     }
 }
