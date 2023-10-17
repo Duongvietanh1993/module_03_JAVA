@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Advance/Exam_Advance.iml" filepath="$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Advance/Exam_Advance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exam_Advance_1/Exam_Advance_1.iml" filepath="$PROJECT_DIR$/Exam_Advance_1/Exam_Advance_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Basic/Exam_Basic.iml" filepath="$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Basic/Exam_Basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module_03.iml" filepath="$PROJECT_DIR$/.idea/Module_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Session_01/Session_01.iml" filepath="$PROJECT_DIR$/Session_01/Session_01.iml" />
@@ -17,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/session_10/session_10.iml" filepath="$PROJECT_DIR$/session_10/session_10.iml" />
       <module fileurl="file://$PROJECT_DIR$/session_11/session_11.iml" filepath="$PROJECT_DIR$/session_11/session_11.iml" />
       <module fileurl="file://$PROJECT_DIR$/session_12/session_12.iml" filepath="$PROJECT_DIR$/session_12/session_12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_13/session_13.iml" filepath="$PROJECT_DIR$/session_13/session_13.iml" />
     </modules>
   </component>
 </project>
