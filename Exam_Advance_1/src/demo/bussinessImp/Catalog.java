@@ -1,6 +1,6 @@
-package ra.bussinessImp;
+package demo.bussinessImp;
 
-import ra.bussiness.IShop;
+import demo.bussiness.IShop;
 
 import java.util.Scanner;
 

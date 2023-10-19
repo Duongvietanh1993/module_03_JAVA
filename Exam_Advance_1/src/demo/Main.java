@@ -1,6 +1,6 @@
-package ra;
+package demo;
 
-import ra.run.ProductManagement;
+import demo.run.ProductManagement;
 
 public class Main {
     public static void main(String[] args) {
