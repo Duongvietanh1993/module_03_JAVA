@@ -3,11 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Advance/Exam_Advance.iml" filepath="$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Advance/Exam_Advance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1/Exam_Advance_1.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1/Exam_Advance_1.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_2/Exam_Advance_2.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_2/Exam_Advance_2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_3/Exam_Advance_3.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_3/Exam_Advance_3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1.iml" />
       <module fileurl="file://$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Basic/Exam_Basic.iml" filepath="$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Basic/Exam_Basic.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/HN_JV230630_AD_DuongVietAnh.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/HN_JV230630_AD_DuongVietAnh.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module_03.iml" filepath="$PROJECT_DIR$/.idea/Module_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Session_01/Session_01.iml" filepath="$PROJECT_DIR$/Session_01/Session_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/mo_hinh_project/mo_hinh_project.iml" filepath="$PROJECT_DIR$/mo_hinh_project/mo_hinh_project.iml" />

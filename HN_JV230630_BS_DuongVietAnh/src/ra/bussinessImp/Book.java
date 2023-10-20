@@ -51,7 +51,7 @@ public class Book implements IBook,Comparable<Book>{
 
     public void setBookStatus(Scanner scanner) {
         System.out.println(
-                "Trạng thái" + '\n' +
+                "Trạng thái: " + '\n' +
                         "1.true" + '\n' +
                         "2.false" + '\n'
         );
