@@ -18,15 +18,21 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.println("---- Menu Nhập Câu ----");
+                    System.out.println("---- Menu Nhập Câu ----"+'\n');
                     System.out.print("Nhập câu: ");
                     sentence = scanner.nextLine();
                     break;
                 case 2:
-                    System.out.println("---- Menu Đảo Câu ----");
-                    String reversedSentence = reverseSentence(sentence);
-                    System.out.println("Câu đảo ngược: " + reversedSentence);
-                    break;
+                    if (!sentence.isEmpty()) {
+                        System.out.println("---- Menu Đảo Câu ----" + '\n');
+                        String reversedSentence = reverseSentence(sentence);
+                        System.out.println("Câu đảo ngược: " + reversedSentence);
+                        break;
+                    }else {
+                        System.err.println("không có câu để đao ngược, mời nhập câu");
+                        break;
+                    }
+
                 default:
                     System.err.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
             }
@@ -37,15 +43,15 @@ public class Main {
 
     private static String reverseSentence(String sentence) {
         String[] words = sentence.split(" ");
-        int left = 0;
-        int right = words.length - 1;
+        int before = 0;
+        int after = words.length - 1;
 
-        while (left < right) {
-            String temp = words[left];
-            words[left] = words[right];
-            words[right] = temp;
-            left++;
-            right--;
+        while (before < after) {
+            String temp = words[before];
+            words[before] = words[after];
+            words[after] = temp;
+            before++;
+            after--;
         }
 
         StringBuilder reversedSentence = new StringBuilder();
@@ -53,6 +59,6 @@ public class Main {
             reversedSentence.append(word).append(" ");
         }
 
-        return reversedSentence.toString().trim();
+        return reversedSentence.toString();
     }
 }

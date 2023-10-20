@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Queue<String> parentQueue = new LinkedList<>();
+        Queue<String> listQueue = new LinkedList<>();
 
         String menu = "******** Menu Chính ********\n" +
                 "1. Nhập tên phụ huynh nộp hồ sơ\n" +
@@ -20,18 +20,23 @@ public class Main {
 
             switch (choice) {
                 case 1:
-                    System.out.println("---- Menu Nhập ----");
+                    System.out.println("===== Menu Nhập =====" + '\n');
                     System.out.print("Nhập tên phụ huynh: ");
                     String parentName = scanner.nextLine();
-                    parentQueue.add(parentName);
+                    listQueue.add(parentName);
+                    System.out.println('\n' + "--- Danh sách phụ huynh ---");
+                    for (String parents : listQueue) {
+                        System.out.println("Tên phụ huynh: " + parents);
+                    }
                     break;
                 case 2:
-                    System.out.println("---- In Tên Đầu Trong Danh Sách Và Xóa ----");
-                    if (!parentQueue.isEmpty()) {
-                        String nextParent = parentQueue.poll();
-                        System.out.println("Phụ huynh tiếp theo: " + nextParent);
+                    System.out.println("===== In Tên Đầu Trong Danh Sách Và Xóa =====" + '\n');
+                    if (listQueue.isEmpty()) {
+                        System.err.println("Hiện danh sách không có phụ huynh nào, mời nhập vào");
                     } else {
-                        System.err.println("Danh sách phụ huynh rỗng.");
+                        String nextParent = listQueue.poll();
+                        System.out.println("Phụ huynh ở đầu danh sách là: ");
+                        System.out.println("Tên phụ huynh: " + nextParent);
                     }
                     break;
                 default:
@@ -39,6 +44,6 @@ public class Main {
             }
 
             System.out.println();
-        }while (choice!=0);
+        } while (choice != 0);
     }
 }
