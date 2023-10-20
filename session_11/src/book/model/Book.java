@@ -84,20 +84,6 @@ public class Book implements IBook {
         this.bookStatus = Integer.parseInt(scanner.nextLine()) == 1;
     }
 
-
-    public void displayData() {
-        System.out.println("Book{" +
-                "bookId= " + bookId +
-                ", bookName= '" + bookName + '\n' +
-                ", title= '" + title + '\'' +
-                ", numberOfPages= " + numberOfPages +
-                ", importPrice= " + importPrice +
-                ", exportPrice= " + exportPrice +
-                ", interest= " + interest +
-                ", bookStatus= " + bookStatus +
-                '}');
-    }
-
     @Override
     public void inputData(Scanner scanner) {
         System.out.println("Nhập tên sách");
@@ -118,5 +104,19 @@ public class Book implements IBook {
         this.bookStatus = Integer.parseInt(scanner.nextLine()) == 1;
         this.setInterest();
 
+    }
+
+    @Override
+    public void displayData() {
+        System.out.println("Book{" +
+                "bookId= " + bookId +
+                ", bookName= '" + bookName + '\n' +
+                ", title= '" + title + '\'' +
+                ", numberOfPages= " + numberOfPages +
+                ", importPrice= " + importPrice +
+                ", exportPrice= " + exportPrice +
+                ", interest= " + interest +
+                ", bookStatus= " + bookStatus +
+                '}');
     }
 }
