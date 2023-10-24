@@ -1,0 +1,4 @@
+tạo file và cho sẵn dữ liệu(có thêt coppy đề bài cho vào file)
+viết hàm đọc file
+convert file đọc được thành mảng string với mỗi từ là 1 phần tử
+sử dụng vòng lặp để tìm kiếm các phần tử xuất hiện nhiều hơn 1 lần và add những phần tử đó vào 1 list

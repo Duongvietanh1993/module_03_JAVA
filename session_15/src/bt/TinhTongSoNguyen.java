@@ -1,4 +1,4 @@
-package tinhTongSoNguyen;
+package bt;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class TinhTongSoNguyen {
             sum = getSumFromUserInput();
             System.out.println("Tổng hai số là: " + sum);
         } catch (NumberFormatException e) {
-            System.out.println("Lỗi: Hãy nhập vào số nguyên.");
+            System.err.println("Lỗi: Hãy nhập vào số nguyên.");
             main(args); // Đệ quy để yêu cầu người dùng nhập lại
         }
     }

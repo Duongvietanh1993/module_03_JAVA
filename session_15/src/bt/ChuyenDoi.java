@@ -1,4 +1,4 @@
-package tinhTongSoNguyen;
+package bt;
 
 import java.util.ArrayList;
 import java.util.List;

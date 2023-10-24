@@ -1,4 +1,4 @@
-package tinhTongSoNguyen;
+package bt;
 
 public class TimSoLonNhat {
     public static void main(String[] args) {
