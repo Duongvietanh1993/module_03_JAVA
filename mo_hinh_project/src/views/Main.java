@@ -6,24 +6,20 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Main main = new Main();
-        main.menu();
+
+        new Main().menu(); // tương đương 2 dòng trên tạo đối tượng lớp Main để gọi đến phương thức
     }
     public void menu() {
-        Scanner scanner = new Scanner(System.in);
         int choice;
         do {
             System.out.println("**********************MENU************************");
-            System.out.println("1. Hiển thị danh sách");
-            System.out.println("2. Thêm");
-            System.out.println("3. Sửa");
-            System.out.println("4. Xóa");
-            System.out.println("5. Sắp xếp");
-            System.out.println("6. Tìm kiếm");
-            System.out.println("7. Khác");
-            System.out.println("8. Thoát");
-            System.out.print("Mời lựa chọn (1/2/3/4/5/6/7/8): ");
-            choice = Config.validate();
+            System.out.println("1. Quản lý lớp học");
+            System.out.println("2. Quản lý sinh viên");
+            System.out.println("3. Quản lý môn học");
+            System.out.println("4. Quản lý điểm");;
+            System.out.println("0. Thoát");
+            System.out.print("Lựa chọn (0/1/2/3/4) ");
+            choice = Config.validateInt();
             switch (choice) {
                 case 1:
                     new ClassRoomView().menu();
@@ -34,13 +30,7 @@ public class Main {
                     break;
                 case 4:
                     break;
-                case 5:
-                    break;
-                case 6:
-                    break;
-                case 7:
-                    break;
-                case 8:
+                case 0:
                     System.exit(0);
                     break;
                 default:

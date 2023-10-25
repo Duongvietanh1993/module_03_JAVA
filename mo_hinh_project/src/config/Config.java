@@ -7,7 +7,7 @@ public class Config {
         return new Scanner(System.in);
     }
 
-    public static int validate (){
+    public static int validateInt (){
         int n;
         System.out.println("Mời Nhập: ");
         while (true){

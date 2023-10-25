@@ -6,12 +6,13 @@ import models.Student;
 import sevice.IClassRoomSevice;
 import sevice.IStudentSevice;
 import sevice.impl.ClassRoomSeviceIMPL;
+import sevice.impl.StudentSeviceIMPL;
 
 import java.util.List;
 
 public class ClassRoomView {
     IClassRoomSevice classRoomSevice = new ClassRoomSeviceIMPL();
-
+    IStudentSevice studentSevice = new StudentSeviceIMPL();
 
     public void menu() {
         int choice;
@@ -23,7 +24,7 @@ public class ClassRoomView {
             System.out.println("4. Xóa");
             System.out.println("0. Thoát");
             System.out.print("Mời lựa chọn (1/2/3/4): ");
-            choice = Config.validate();
+            choice = Config.validateInt();
             switch (choice) {
                 case 1:
                     showListClassRoom();
@@ -35,7 +36,7 @@ public class ClassRoomView {
                     editClassRoom();
                     break;
                 case 4:
-
+                    deleteClassRoom();
                     break;
                 default:
                     System.out.println("Lựa chọn không hợp lệ. Vui lòng chọn lại.");
@@ -46,7 +47,7 @@ public class ClassRoomView {
 
     private void addClassRoom() {
         System.out.println("Nhập số lượng lớp học cần thêm: ");
-        int n = Config.validate();
+        int n = Config.validateInt();
         for (int i = 0; i < n; i++) {
             System.out.println("Nhập lớp thứ " + (i + 1));
             ClassRoom newClassRoom = new ClassRoom();
@@ -68,7 +69,7 @@ public class ClassRoomView {
 
     private void editClassRoom() {
         System.out.println("Mời nhập ID cần sửa: ");
-        int inEdit = Config.validate();
+        int inEdit = Config.validateInt();
         ClassRoom classRoomEdit = classRoomSevice.findById(inEdit);
         if (classRoomEdit != null) {
             System.out.println("Đối tượng cần sửa: ");
@@ -77,7 +78,7 @@ public class ClassRoomView {
             System.out.println("Chọn thông tin cần sửa");
             System.out.println("1.sửa tên");
             System.out.println("2.sửa trạng thái");
-            choice = Config.validate();
+            choice = Config.validateInt();
             switch (choice) {
                 case 1:
                     System.out.println("Nhập tên mới: ");
@@ -97,8 +98,26 @@ public class ClassRoomView {
     }
 
     private void deleteClassRoom() {
-        System.out.println("Nhập ID lớp ần xóa: ");
-        int idDelete = Config.validate();
-
+        System.out.println("Nhập ID lớp học cần xóa: ");
+        int idDelete = Config.validateInt();
+        List<Student> studentList = studentSevice.findAll();
+        for (Student student : studentList) {
+            if (student.getClassRoom().getClassroomId() == idDelete){
+                System.out.println("Lớp học đã tồn tại sinh viên không được xóa");
+                return;
+            }
+        }
+        boolean check = true;
+        for (ClassRoom classroom : classRoomSevice.findAll()) {
+            if (classroom.getClassroomId() == idDelete){
+                classRoomSevice.delete(idDelete);
+                System.out.println("Xóa lớp học thành công");
+                check = false;
+                break;
+            }
+        }
+        if (check){
+            System.out.println("Không tim thấy lớp học theo ID vừa nhâp");
+        }
     }
 }

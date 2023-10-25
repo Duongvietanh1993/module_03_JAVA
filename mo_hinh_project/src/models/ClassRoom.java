@@ -1,24 +1,27 @@
 package models;
 
 public class ClassRoom {
-
+    private static int newId = 1;
     private int classroomId;
     private String classroomName;
     private boolean status;
-    private static int count = 0;
 
     public ClassRoom() {
-        this.classroomId = count++;
+        this.classroomId = newId++;
     }
 
-    public ClassRoom(String classroomName, boolean status) {
-        this.classroomId = count++;
+    public ClassRoom(int classroomId, String classroomName, boolean status) {
+        this.classroomId = classroomId;
         this.classroomName = classroomName;
         this.status = status;
     }
 
     public int getClassroomId() {
         return classroomId;
+    }
+
+    public void setClassroomId(int classroomId) {
+        this.classroomId = classroomId;
     }
 
     public String getClassroomName() {
@@ -39,10 +42,7 @@ public class ClassRoom {
 
     @Override
     public String toString() {
-        return "ClassRoom{" +
-                "classroomId=" + classroomId +
-                ", classroomName='" + classroomName + '\'' +
-                ", status=" + status +
-                '}';
+        return "Mã lớp học: " + classroomId + " - Tên lớp: " + classroomName +
+                " - Trạng thái lớp: " + (status ? "Đang học" : "Kết thúc");
     }
 }
