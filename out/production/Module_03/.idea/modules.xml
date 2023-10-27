@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Advance/Exam_Advance.iml" filepath="$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Advance/Exam_Advance.iml" />
-      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1/Exam_Advance_1.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_1/Exam_Advance_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_2/Exam_Advance_2.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_2/Exam_Advance_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_3/Exam_Advance_3.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/Exam_Advance_3/Exam_Advance_3.iml" />
       <module fileurl="file://$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Basic/Exam_Basic.iml" filepath="$PROJECT_DIR$/HN_JV230630_DuongVietAnh/Exam_Basic/Exam_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/HN_JV230630_AD_DuongVietAnh.iml" filepath="$PROJECT_DIR$/HN_JV230630_AD_DuongVietAnh/HN_JV230630_AD_DuongVietAnh.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Module_03.iml" filepath="$PROJECT_DIR$/.idea/Module_03.iml" />
       <module fileurl="file://$PROJECT_DIR$/Session_01/Session_01.iml" filepath="$PROJECT_DIR$/Session_01/Session_01.iml" />
       <module fileurl="file://$PROJECT_DIR$/mo_hinh_project/mo_hinh_project.iml" filepath="$PROJECT_DIR$/mo_hinh_project/mo_hinh_project.iml" />
@@ -22,6 +25,10 @@
       <module fileurl="file://$PROJECT_DIR$/session_13/session_13.iml" filepath="$PROJECT_DIR$/session_13/session_13.iml" />
       <module fileurl="file://$PROJECT_DIR$/session_14/session_14.iml" filepath="$PROJECT_DIR$/session_14/session_14.iml" />
       <module fileurl="file://$PROJECT_DIR$/session_15/session_15.iml" filepath="$PROJECT_DIR$/session_15/session_15.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_16/session_16.iml" filepath="$PROJECT_DIR$/session_16/session_16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_17/session_17.iml" filepath="$PROJECT_DIR$/session_17/session_17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_18/session_18.iml" filepath="$PROJECT_DIR$/session_18/session_18.iml" />
+      <module fileurl="file://$PROJECT_DIR$/session_19/session_19.iml" filepath="$PROJECT_DIR$/session_19/session_19.iml" />
     </modules>
   </component>
 </project>
